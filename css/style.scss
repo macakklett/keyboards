@@ -1,0 +1,528 @@
+@import url(https://fonts.googleapis.com/css?family=Barlow:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+// variables for colors
+$or: #F16718;
+$orl: #FF9B62;
+$bld: #162542;
+$bll: #7B8BAD;
+$gr: #E8EFF2;
+$wt: #FFFFFF;
+// end of the list
+
+html,
+body {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.box {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #fff;
+    font-family: 'Barlow';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: $bll;
+
+    .btn {
+        width: 175px;
+        height: 58px;
+        border-radius: 8px;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+    }
+
+    .container {
+        max-width: 1110px;
+        margin: 0 auto;
+    }
+
+    .header {
+        width: inherit;
+        height: 196px;
+        padding: 55px 0 83px;
+
+        &__inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &-logo {
+                display: inline-flex;
+
+                a {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+
+        &__btn {
+            background-color: $gr;
+            color: $bld;
+        }
+    }
+
+    .menu {
+        .order {
+            position: relative;
+
+            &__inner {
+                height: 480px;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 30px;
+
+                &-description {
+                    max-width: 570px;
+                    padding: 60px 125px 108px 0;
+
+                    .description__title {
+                        font-weight: 900;
+                        font-size: 56px;
+                        line-height: 56px;
+                        text-transform: uppercase;
+                        color: $bld;
+                        margin-bottom: 24px;
+                    }
+
+                    .description__text {
+                        font-size: 18px;
+                        margin-bottom: 40px;
+                    }
+
+                    .description__doing {
+                        display: flex;
+                        align-items: center;
+                        text-transform: uppercase;
+                    }
+
+                    .order__btn {
+                        background-color: $or;
+                        color: $wt;
+                        margin-right: 40px;
+                    }
+
+                }
+
+                &-imgkeybr {
+                    width: 540px;
+                    border-radius: 20px;
+                    background-color: #D8D8D8;
+                    background-image: url(../images/desktop/image-keyboard.jpg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+
+                &-designhelp {
+                    width: 128px;
+                    height: 240px;
+                    background-color: $gr;
+                    border-radius: 20px 0 0 20px;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+
+            }
+        }
+
+        .mech {
+            position: relative;
+
+            &__inner {
+                height: 480px;
+                display: flex;
+                // flex-wrap: wrap;
+                justify-content: space-between;
+                margin-bottom: 168px;
+
+                &-designhelp {
+                    width: 128px;
+                    height: 240px;
+                    background-color: $gr;
+                    border-radius: 0 20px 20px 0;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                }
+
+                &-fonimg {
+                    width: 255px;
+                    height: 480px;
+                    border-radius: 20px;
+                    background-image: url(../images/desktop/image-phone-and-keyboard.jpg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    margin-right: 30px;
+
+                    .fon__orange {
+                        width: inherit;
+                        height: inherit;
+                        background-color: rgba(241, 104, 24, 0.75);
+                        mix-blend-mode: multiply;
+                        border-radius: 20px;
+                    }
+                }
+
+                &-imgtwo {
+                    width: 445px;
+                    border-radius: 20px;
+                    background-color: #D8D8D8;
+                    background-image: url(../images/desktop/image-glass-and-keyboard.jpg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+
+                &-info {
+                    max-width: 380px;
+                    padding: 112px 0 103px 125px;
+
+                    .info__title {
+                        font-weight: 900;
+                        font-size: 32px;
+                        line-height: 36px;
+                        text-transform: uppercase;
+                        color: $bld;
+                        margin-bottom: 27px;
+                    }
+                }
+            }
+        }
+
+        .set {
+            &__inner {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                &-item {
+                    width: 255px;
+                    height: 323px;
+
+                    .item__icon {
+                        width: 65px;
+                        height: 65px;
+                        background-color: $or;
+                        border-radius: 16px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-bottom: 48px;
+                    }
+
+                    .item__title {
+                        font-weight: 900;
+                        font-size: 24px;
+                        line-height: 28px;
+                        text-transform: uppercase;
+                        color: $bld;
+                        margin-bottom: 24px;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .footer {
+        height: 193px;
+        padding: 128px 0 39px;
+        text-align: center;
+
+        span {
+            font-weight: 700;
+        }
+    }
+}
+
+
+@media(max-width:820px) {
+    .box {
+        max-width: 768px;
+
+
+        .container {
+            max-width: 689px;
+        }
+
+        .header {
+            height: 160px;
+            padding: 40px 0 62px;
+        }
+
+        .menu {
+            .order {
+                &__inner {
+                    height: 425px;
+                    margin-bottom: 40px;
+
+                    &-description {
+                        max-width: 408px;
+                        padding: 60px 69px 60px 0;
+
+                        .description__title {
+                            font-size: 48px;
+                            line-height: 48px;
+                            margin-bottom: 34px;
+                        }
+
+                        .description__text {
+                            font-size: 16px;
+                            margin-bottom: 39px;
+                        }
+
+
+                        .order__btn {
+                            margin-right: 37px;
+                        }
+
+                    }
+
+                    &-imgkeybr {
+                        width: 321px;
+                        height: 425px;
+                        border-radius: 20px 0 0 20px;
+                        background-image: url(../images/tablet/image-keyboard.jpg);
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                    }
+
+                    &-designhelp {
+                        display: none;
+                    }
+                }
+            }
+
+            .mech {
+
+                &__inner {
+                    height: 500px;
+                    display: block;
+                    // justify-content: space-between;
+                    margin-bottom: 142px;
+
+                    &-designhelp {
+                        display: none;
+                    }
+
+                    &-fonimg {
+                        width: 214px;
+                        height: 320px;
+                        background-image: url(../images/tablet/image-phone-and-keyboard.jpg);
+                        margin-right: 30px;
+                        margin-bottom: 72px;
+                        // float: left;
+                    }
+
+                    &-imgtwo {
+                        width: 445px;
+                        height: 320px;
+                        border-radius: 20px;
+                        background-color: #D8D8D8;
+                        background-image: url(../images/tablet/image-glass-and-keyboard.jpg);
+                        position: absolute;
+                        top: 0;
+                        right: 40px;
+                    }
+
+                    &-info {
+                        max-width: inherit;
+                        padding: 0;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .info__title {
+                            width: 255px;
+                            height: 108px;
+                            margin-right: 36px;
+                            margin-bottom: 0;
+                        }
+
+                        .info__text {
+                            width: 398px;
+                            height: 78px;
+                        }
+                    }
+                }
+            }
+
+            .set {
+                &__inner {
+
+                    &-item {
+                        width: 281px;
+                        height: 289px;
+                        margin-bottom: 72px;
+
+                        .item__icon {
+                            margin-bottom: 40px;
+                        }
+
+
+                    }
+                }
+            }
+        }
+
+        .footer {
+            height: 139px;
+            padding: 72px 0 43px;
+        }
+    }
+}
+
+@media(max-width:500px) {
+    .box {
+        max-width: 375px;
+
+        .btn {
+            width: 151px;
+            height: 48px;
+        }
+
+
+        .container {
+            max-width: 327px;
+        }
+
+        .header {
+            height: 135px;
+            padding: 23px 0 64px;
+        }
+
+        .menu {
+            .order {
+                &__inner {
+                    height: 681px;
+                    display: block;
+                    margin-bottom: 24px;
+
+                    &-description {
+                        width: inherit;
+                        padding: 0;
+                        margin-bottom: 64px;
+
+                        .description__title {
+                            margin-bottom: 32px;
+                        }
+
+                        .description__text {
+                            margin-bottom: 32px;
+                        }
+
+
+                        .order__btn {
+                            margin-right: 32px;
+                        }
+
+                    }
+
+                    &-imgkeybr {
+                        width: 351px;
+                        height: 331px;
+                        background-image: url(../images/mobile/image-keyboard.jpg);
+                        top: auto;
+                        bottom: 0;
+                    }
+                }
+            }
+
+            .mech {
+                position: relative;
+                padding-top: 268px;
+
+                &__inner {
+                    height: 236px;
+                    margin-bottom: 111px;
+
+                    &-fonimg {
+                        width: 107px;
+                        height: 193px;
+                        background-image: url(../images/mobile/image-phone-and-keyboard.jpg);
+                        border-radius: 0 20px 20px 0;
+                        margin-right: 24px;
+                        margin-bottom: 75px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+
+                        .fon__orange {
+                            border-radius: 0 20px 20px 0;
+                        }
+                    }
+
+                    &-imgtwo {
+                        width: 220px;
+                        height: 193px;
+                        background-image: url(../images/mobile/image-glass-and-keyboard.jpg);
+                        right: 24px;
+                    }
+
+                    &-info {
+                        max-width: 327px;
+                        padding: 0;
+                        display: block;
+                        text-align: center;
+
+                        .info__title {
+                            width: 255px;
+                            height: 108px;
+                            margin: 0 auto 24px auto;
+                            text-align: center;
+                        }
+
+                        .info__text {
+                            width: 327px;
+                            height: 104px;
+                        }
+                    }
+                }
+            }
+
+            .set {
+                &__inner {
+
+                    &-item {
+                        width: 328px;
+                        height: 288px;
+                        margin-bottom: 73px;
+                        text-align: center;
+
+                        .item__icon {
+                            margin: 0 auto 48px;
+                        }
+
+                        .item__title {
+                            margin-bottom: 15px;
+                        }
+
+
+                    }
+                }
+            }
+        }
+
+        .footer {
+            height: 99px;
+            padding: 23px 0 50px;
+        }
+    }
+}
